@@ -1,0 +1,3 @@
+rhc app create wildfly -s https://raw.githubusercontent.com/openshift-cartridges/openshift-wildfly-cartridge/wildfly-9/metadata/manifest.yml
+cp target/wildfly-helloworld.war ~/workspace/devoxx-examples/cloud/wildfly/deployments
+http://wildfly-tomaszadamski.rhcloud.com/wildfly-helloworld
