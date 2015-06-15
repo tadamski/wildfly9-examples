@@ -43,7 +43,7 @@ deploy ~/workspace/modcluster-example/load-balancing-demo/target/clustering-demo
 /server-group=load-balancer:add(profile=default, socket-binding-group=standard-sockets)
 /host=master/server-config=load-balancer:add(group=load-balancer)
 
-
+/server-group=load-balancer:start-servers
 
 #now lets add another server
 /host=master/server-config=backend3:add(group=backend-servers, socket-binding-port-offset=300)

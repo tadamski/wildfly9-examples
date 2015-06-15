@@ -1,2 +1,3 @@
 jboss.server.config.dir 
 -Xbootclasspath/p:
+/subsystem=undertow/server=default-server/https-listener=https:add(socket-binding=https, security-realm=https, enable-http2=true)
