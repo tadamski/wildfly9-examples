@@ -1,0 +1,2 @@
+jboss.server.config.dir 
+-Xbootclasspath/p:

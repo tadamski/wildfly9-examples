@@ -22,7 +22,8 @@ public class SleepingHelloBean implements SleepingHello {
 
 	public void sleep(){
 		try {
-			System.out.println("ZZZ ZE SLEEPA");
+//			System.out.println("ZZZ ZE SLEEPA");
+//			new Exception().printStackTrace();
 			Thread.sleep(1000);
 		} catch(Exception ignored){}
 	}
