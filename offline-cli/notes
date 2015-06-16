@@ -1,5 +1,2 @@
-bin/jboss-cli.sh
 embed-server --std-out=echo
 :write-attribute(name="log-system-exceptions",value="false")
-exit
-show in standalone

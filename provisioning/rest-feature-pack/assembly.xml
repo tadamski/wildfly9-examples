@@ -32,7 +32,7 @@
     <includeBaseDirectory>false</includeBaseDirectory>
     <fileSets>
         <fileSet>
-            <directory>target/wildfly-REST-9.0.0.CR2</directory>
+            <directory>target/wildfly-REST-9.0.0.CR1</directory>
             <outputDirectory/>
         </fileSet>
     </fileSets>
