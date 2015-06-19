@@ -1,4 +1,4 @@
-package org.jboss.as.quickstarts.rshelloworld;
+package org.tadamski.examples.swarm;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
