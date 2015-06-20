@@ -1,0 +1,467 @@
+2015-06-20 21:11:30,194 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2015-06-20 21:11:30,332 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.4.Final
+2015-06-20 21:11:30,379 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) starting
+2015-06-20 21:11:30,380 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_31-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_31
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.31-b07
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly
+	jboss.host.name = localhost
+	jboss.modules.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	jboss.server.config.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties
+	module.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	org.jboss.boot.log.file = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.18.7-100.fc20.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar -mp /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly -Djboss.server.base.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = PL
+	user.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin
+	user.home = /home/tomek
+	user.language = pl
+	user.name = tomek
+	user.timezone = Poland
+2015-06-20 21:11:30,381 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Xbootclasspath/p:/home/tomek/workspace/wildfly9-examples/http2/wildfly/bin -Dorg.jboss.boot.log.file=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties 
+2015-06-20 21:11:30,815 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2015-06-20 21:11:30,829 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2015-06-20 21:11:30,836 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2015-06-20 21:11:30,870 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.9.Final
+2015-06-20 21:11:30,891 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 15) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-06-20 21:11:30,898 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 19) WFLYSEC0002: Activating Security Subsystem
+2015-06-20 21:11:30,902 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 17) WFLYNAM0001: Activating Naming Subsystem
+2015-06-20 21:11:30,903 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.0.Beta2
+2015-06-20 21:11:30,921 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:11:30,922 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:11:30,928 INFO  [org.jboss.as.naming] (MSC service thread 1-2) WFLYNAM0003: Starting Naming Service
+2015-06-20 21:11:30,966 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0014: Creating file handler for path /home/tomek/workspace/wildfly9-examples/http2/wildfly/welcome-content
+2015-06-20 21:11:30,969 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2015-06-20 21:11:30,976 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2015-06-20 21:11:31,020 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-06-20 21:11:31,079 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-1) WFLYDS0013: Started FileSystemDeploymentService for directory /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/deployments
+2015-06-20 21:11:31,080 ERROR [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-4) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2015-06-20 21:11:31,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2015-06-20 21:11:31,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2015-06-20 21:11:31,193 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) started in 1196ms - Started 100 of 105 services (29 services are lazy, passive or on-demand)
+2015-06-20 21:11:41,572 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2015-06-20 21:11:41,591 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2015-06-20 21:11:41,594 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0008: Undertow HTTP listener default suspending
+2015-06-20 21:11:41,596 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2015-06-20 21:11:41,599 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.2.4.Final stopping
+2015-06-20 21:11:41,618 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) stopped in 34ms
+2015-06-20 21:12:31,273 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2015-06-20 21:12:31,386 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.4.Final
+2015-06-20 21:12:31,431 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) starting
+2015-06-20 21:12:31,432 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_31-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_31
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.31-b07
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly
+	jboss.host.name = localhost
+	jboss.modules.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	jboss.server.config.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties
+	module.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	org.jboss.boot.log.file = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.18.7-100.fc20.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar -mp /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly -Djboss.server.base.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = PL
+	user.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin
+	user.home = /home/tomek
+	user.language = pl
+	user.name = tomek
+	user.timezone = Poland
+2015-06-20 21:12:31,432 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Xbootclasspath/p:/home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar -Dorg.jboss.boot.log.file=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties 
+2015-06-20 21:12:31,867 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2015-06-20 21:12:31,880 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2015-06-20 21:12:31,886 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2015-06-20 21:12:31,915 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.9.Final
+2015-06-20 21:12:31,927 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 15) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-06-20 21:12:31,933 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 17) WFLYNAM0001: Activating Naming Subsystem
+2015-06-20 21:12:31,937 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 19) WFLYSEC0002: Activating Security Subsystem
+2015-06-20 21:12:31,941 INFO  [org.jboss.as.security] (MSC service thread 1-8) WFLYSEC0001: Current PicketBox version=4.9.0.Beta2
+2015-06-20 21:12:31,979 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2015-06-20 21:12:31,984 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:12:31,984 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:12:31,998 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0014: Creating file handler for path /home/tomek/workspace/wildfly9-examples/http2/wildfly/welcome-content
+2015-06-20 21:12:32,001 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0012: Started server default-server.
+2015-06-20 21:12:32,004 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2015-06-20 21:12:32,035 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-06-20 21:12:32,098 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/deployments
+2015-06-20 21:12:32,100 ERROR [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-4) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2015-06-20 21:12:32,191 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2015-06-20 21:12:32,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2015-06-20 21:12:32,192 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) started in 1094ms - Started 100 of 105 services (29 services are lazy, passive or on-demand)
+2015-06-20 21:14:28,734 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0008: Undertow HTTP listener default suspending
+2015-06-20 21:14:28,736 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0019: Host default-host stopping
+2015-06-20 21:14:28,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2015-06-20 21:14:28,739 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0004: Undertow 1.2.4.Final stopping
+2015-06-20 21:14:28,769 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) stopped in 41ms
+2015-06-20 21:14:28,769 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) starting
+2015-06-20 21:14:28,770 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.naming.factory.url.pkgs = org.jboss.as.naming.interfaces
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_31-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_31
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.31-b07
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly
+	jboss.host.name = localhost
+	jboss.modules.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	jboss.server.config.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties
+	module.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	org.jboss.boot.log.file = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.jboss.security.context.ThreadLocal = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.18.7-100.fc20.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar -mp /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly -Djboss.server.base.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.nio.ch.bugLevel = 
+	sun.os.patch.level = unknown
+	user.country = PL
+	user.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin
+	user.home = /home/tomek
+	user.language = pl
+	user.name = tomek
+	user.timezone = Poland
+2015-06-20 21:14:28,771 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Xbootclasspath/p:/home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar -Dorg.jboss.boot.log.file=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties 
+2015-06-20 21:14:28,849 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2015-06-20 21:14:28,864 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 17) WFLYNAM0001: Activating Naming Subsystem
+2015-06-20 21:14:28,864 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 15) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-06-20 21:14:28,865 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 19) WFLYSEC0002: Activating Security Subsystem
+2015-06-20 21:14:28,869 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=4.9.0.Beta2
+2015-06-20 21:14:28,871 INFO  [org.jboss.as.naming] (MSC service thread 1-3) WFLYNAM0003: Starting Naming Service
+2015-06-20 21:14:28,873 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:14:28,873 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:14:28,875 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0014: Creating file handler for path /home/tomek/workspace/wildfly9-examples/http2/wildfly/welcome-content
+2015-06-20 21:14:28,876 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2015-06-20 21:14:28,876 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0018: Host default-host starting
+2015-06-20 21:14:28,878 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-06-20 21:14:28,902 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-7) WFLYDS0013: Started FileSystemDeploymentService for directory /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/deployments
+2015-06-20 21:14:28,902 ERROR [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-2) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2015-06-20 21:14:29,019 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2015-06-20 21:14:29,019 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2015-06-20 21:14:29,019 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) started in 248ms - Started 103 of 109 services (32 services are lazy, passive or on-demand)
+2015-06-20 21:15:12,029 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on /127.0.0.1:8443
+2015-06-20 21:55:29,188 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2015-06-20 21:55:29,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2015-06-20 21:55:29,198 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTPS listener https suspending
+2015-06-20 21:55:29,203 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2015-06-20 21:55:29,217 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to /127.0.0.1:8443
+2015-06-20 21:55:29,218 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2015-06-20 21:55:29,218 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0004: Undertow 1.2.4.Final stopping
+2015-06-20 21:55:29,227 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0050: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) stopped in 20ms
+2015-06-20 21:59:52,289 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2015-06-20 21:59:52,417 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.4.Final
+2015-06-20 21:59:52,466 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) starting
+2015-06-20 21:59:52,467 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/endorsed
+	java.ext.dirs = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = OpenJDK Runtime Environment
+	java.runtime.version = 1.8.0_31-b13
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_31
+	java.vm.info = mixed mode
+	java.vm.name = OpenJDK 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.31-b07
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly
+	jboss.host.name = localhost
+	jboss.modules.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = localhost
+	jboss.qualified.host.name = localhost.localdomain
+	jboss.server.base.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	jboss.server.config.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration
+	jboss.server.data.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data
+	jboss.server.deploy.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/data/content
+	jboss.server.log.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log
+	jboss.server.name = localhost
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties
+	module.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules
+	org.jboss.boot.log.file = /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.18.7-100.fc20.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/classes
+	sun.boot.library.path = /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.31.x86_64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/tomek/workspace/wildfly9-examples/http2/wildfly/jboss-modules.jar -mp /home/tomek/workspace/wildfly9-examples/http2/wildfly/modules org.jboss.as.standalone -Djboss.home.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly -Djboss.server.base.dir=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = PL
+	user.dir = /home/tomek/workspace/wildfly9-examples/http2/wildfly/bin
+	user.home = /home/tomek
+	user.language = pl
+	user.name = tomek
+	user.timezone = Poland
+2015-06-20 21:59:52,468 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Xbootclasspath/p:/home/tomek/workspace/wildfly9-examples/http2/wildfly/bin/alpn-boot-8.1.3.v20150130.jar -Dorg.jboss.boot.log.file=/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/log/server.log -Dlogging.configuration=file:/home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/configuration/logging.properties 
+2015-06-20 21:59:52,919 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2015-06-20 21:59:52,944 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.1.Final
+2015-06-20 21:59:52,966 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.1.Final
+2015-06-20 21:59:52,994 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 15) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2015-06-20 21:59:52,996 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 17) WFLYNAM0001: Activating Naming Subsystem
+2015-06-20 21:59:53,018 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 19) WFLYSEC0002: Activating Security Subsystem
+2015-06-20 21:59:53,018 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2015-06-20 21:59:53,019 INFO  [org.jboss.as.security] (MSC service thread 1-6) WFLYSEC0001: Current PicketBox version=4.9.0.Beta2
+2015-06-20 21:59:53,056 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:59:53,057 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0003: Undertow 1.2.4.Final starting
+2015-06-20 21:59:53,064 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.9.Final
+2015-06-20 21:59:53,110 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 21) WFLYUT0014: Creating file handler for path /home/tomek/workspace/wildfly9-examples/http2/wildfly/welcome-content
+2015-06-20 21:59:53,110 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2015-06-20 21:59:53,127 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2015-06-20 21:59:53,155 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2015-06-20 21:59:53,243 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /home/tomek/workspace/wildfly9-examples/http2/wildfly/standalone/deployments
+2015-06-20 21:59:53,243 ERROR [org.jboss.as.domain.http.api.undertow] (MSC service thread 1-6) WFLYDMHTTP0003: Unable to load console module for slot main, disabling console
+2015-06-20 21:59:53,356 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow HTTPS listener https listening on /127.0.0.1:8443
+2015-06-20 21:59:53,427 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2015-06-20 21:59:53,428 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2015-06-20 21:59:53,428 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) started in 1355ms - Started 106 of 111 services (32 services are lazy, passive or on-demand)
+2015-06-20 22:00:22,651 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2015-06-20 22:00:22,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0019: Host default-host stopping
+2015-06-20 22:00:22,657 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2015-06-20 22:00:22,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0008: Undertow HTTPS listener https suspending
+2015-06-20 22:00:22,660 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to /127.0.0.1:8443
+2015-06-20 22:00:22,659 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2015-06-20 22:00:22,661 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.2.4.Final stopping
+2015-06-20 22:00:22,665 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Web Lite 9.0.0.CR1 (WildFly Core 1.0.0.CR1) stopped in 10ms
