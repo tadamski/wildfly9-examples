@@ -29,7 +29,7 @@
     </exports>
 
     <resources>
-        <resource-root path="wildfly-undertow-9.0.0.CR1.jar"/>
+        <resource-root path="wildfly-undertow-10.0.0.CR5-SNAPSHOT.jar"/>
     </resources>
 
     <dependencies>
@@ -57,7 +57,7 @@
         <module name="org.jboss.as.naming"/>
         <module name="org.jboss.as.network"/>
         <module name="org.jboss.as.security"/>
-        <module name="org.wildfly.security.manager"/>
+        <module name="org.wildfly.security.elytron"/>
         <module name="org.jboss.as.server"/>
         <module name="org.jboss.as.threads"/>
         <module name="org.jboss.common-beans" services="import"/>
@@ -70,11 +70,11 @@
         <module name="org.jboss.metadata.ear"/>
         <module name="org.jboss.modules"/>
         <module name="org.jboss.msc"/>
+        <module name="org.jboss.security.negotiation"/>
         <module name="org.jboss.threads"/>
         <module name="org.jboss.vfs"/>
         <module name="org.jboss.as.version"/>
         <module name="org.jboss.logging"/>
-        <module name="org.jboss.common-core"/>
         <module name="org.picketbox"/>
         <module name="javax.security.jacc.api"/>
         <module name="org.jboss.xnio"/>

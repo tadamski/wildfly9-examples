@@ -25,13 +25,16 @@
   -->
 
 <module xmlns="urn:jboss:module:1.3" name="org.wildfly.extension.request-controller">
+    <properties>
+        <property name="jboss.api" value="private"/>
+    </properties>
 
     <exports>
         <exclude path="org/wildfly/extension/requestcontroller/logging"/>
     </exports>
 
     <resources>
-        <resource-root path="wildfly-request-controller-1.0.0.CR1.jar"/>
+        <resource-root path="wildfly-request-controller-2.0.0.Final.jar"/>
     </resources>
 
     <dependencies>
@@ -39,7 +42,7 @@
         <module name="sun.jdk"/>
         <module name="org.jboss.staxmapper"/>
         <module name="org.jboss.as.controller"/>
-        <module name="org.wildfly.security.manager"/>
+        <module name="org.wildfly.security.elytron"/>
         <module name="org.jboss.as.server"/>
         <module name="org.jboss.as.security" optional="true"/>
         <module name="org.jboss.msc"/>

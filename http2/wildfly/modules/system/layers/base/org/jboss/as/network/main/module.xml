@@ -28,12 +28,12 @@
     </properties>
 
     <resources>
-        <resource-root path="wildfly-network-1.0.0.CR1.jar"/>
+        <resource-root path="wildfly-network-2.0.0.Final.jar"/>
     </resources>
 
     <dependencies>
         <module name="javax.api"/>
-        <module name="org.wildfly.security.manager"/>
+        <module name="org.wildfly.security.elytron"/>
         <module name="org.jboss.msc"/>
         <module name="org.jboss.logging" />
     </dependencies>

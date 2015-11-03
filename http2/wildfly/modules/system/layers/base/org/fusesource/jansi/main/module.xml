@@ -28,7 +28,7 @@
     </properties>
 
     <resources>
-        <resource-root path="jansi-1.9.jar"/>
+        <resource-root path="jansi-1.11.jar"/>
     </resources>
 
     <dependencies>
