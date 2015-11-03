@@ -1,0 +1,1 @@
+insert into Foo (id, name) values (0, 'Foo')
