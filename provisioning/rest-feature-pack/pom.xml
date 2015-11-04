@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.wildfly</groupId>
         <artifactId>wildfly-parent</artifactId>
-        <version>9.0.0.CR1</version>
+        <version>10.0.0.CR4</version>
     </parent>
 
     <artifactId>wildfly-rest-feature-pack</artifactId>
@@ -34,7 +34,7 @@
 	
 	<dependency>
             <groupId>org.wildfly</groupId>
-	    <artifactId>wildfly-web-feature-pack</artifactId>
+	    <artifactId>wildfly-servlet-feature-pack</artifactId>
             <type>zip</type>
             <exclusions>
                 <exclusion>
