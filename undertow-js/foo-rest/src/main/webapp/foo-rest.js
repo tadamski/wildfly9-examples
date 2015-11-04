@@ -6,7 +6,7 @@ $undertow
     .onGet("/hello",
     {headers: {"content-type": "text/plain"}},
     [ function ($exchange) {
-        return "Hello World!";
+        return "Hello Warsaw JBUG!";
     }])
     .wrapper(['jndi:java:comp/UserTransaction', function($exchange, $next, ut) {
         try {
@@ -32,8 +32,8 @@ $undertow
                 $exchange.send(400, JSON.stringify(results));
             } else {
                 $exchange.send(400, JSON.stringify({"error": e.message}));
+                throw e;
             }
-            throw e;
         }
     }])
     .onGet("/rest/foos", {headers: {"content-type": "application/json"}}, ['cdi:fooRepository', function ($exchange, fooRepository) {
